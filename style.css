@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#loading {
+    display: none;
+    font-weight: bold;
+}
+
+#icon {
+    width: 80px;
+}
+
+#forecast {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.forecast-card {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px;
+    min-width: 80px;
+    font-size: 12px;
+}
