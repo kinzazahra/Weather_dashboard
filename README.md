@@ -1,89 +1,156 @@
-Interactive Weather Dashboard
-A beautiful, feature-rich web application that provides real-time weather updates, an interactive geographic map, and a dynamic 5-day temperature forecast. With a modern glassmorphism design and dark mode support, it offers a visually engaging way to track global weather conditions.
+# 🌤️ Interactive Weather Dashboard
 
-Built with passion and logic by Kinza Zahra 🌤️
+A sleek, modern web application that delivers real-time weather insights, an interactive global map, and a visually rich 5-day forecast experience. Designed with a glassmorphism aesthetic and full dark mode support, this dashboard makes exploring weather data both intuitive and engaging.
 
-Features
-Real-Time Weather Tracking:
+---
 
-Search for any city to get instant, accurate weather data including Temperature (°C), Humidity, Wind Speed, Pressure, and Visibility.
+## ✨ Features
 
-Dynamic weather icons that update automatically based on current conditions (Sunny, Cloudy, Rainy, Snowy, etc.).
+### 🌍 Real-Time Weather Tracking
 
-5-Day Forecast & Analytics:
+* Search any city worldwide and instantly view:
 
-View a clean, card-based layout for the upcoming 5 days.
+  * 🌡 Temperature (°C)
+  * 💧 Humidity
+  * 🌬 Wind Speed
+  * 🔽 Pressure
+  * 👁 Visibility
+* Dynamic weather icons that update based on live conditions (Sunny, Rainy, Snowy, etc.)
 
-Visual Trends: Integrated with Chart.js to display an interactive line chart of temperature fluctuations over the next few days.
+---
 
-Interactive Mapping:
+### 📊 5-Day Forecast & Insights
 
-Features a live, interactive map powered by Leaflet.js that automatically pans and zooms to the searched city's exact coordinates.
+* Clean, card-based layout for upcoming weather
+* Interactive temperature trend chart powered by **Chart.js**
+* Easily analyze fluctuations over time
 
-Smart User Experience:
+---
 
-Geolocation Integration: Automatically detects your current location upon loading and displays your local weather immediately.
+### 🗺 Interactive Map Integration
 
-Dark/Light Mode Toggle: Built-in theme switcher with smooth transitions, saving your preference directly to local storage.
+* Live map powered by **Leaflet.js**
+* Automatically zooms and pans to the selected city
+* Visualize exact geographic weather location
 
-Modern UI Design:
+---
 
-Responsive, glassmorphism-inspired interface with frosted glass effects, gradient backgrounds, and fluid hover animations.
+### 🧠 Smart User Experience
 
-🛠 Tech Stack
-Frontend: HTML5, CSS3 (CSS Variables, Flexbox/Grid, Glassmorphism), Vanilla JavaScript (ES6+).
+* 📍 **Geolocation Support**
+  Automatically detects your location and shows local weather on load
 
-APIs & Libraries:
+* 🌙 **Dark / Light Mode Toggle**
+  Smooth theme switching with preference saved in local storage
 
-OpenWeatherMap API: For fetching real-time weather and forecast data.
+---
 
-Chart.js: For rendering the beautiful temperature trend graphs.
+### 🎨 Modern UI Design
 
-Leaflet.js: For the interactive geographical map rendering.
+* Glassmorphism-inspired interface
+* Frosted glass effects & gradient backgrounds
+* Smooth animations and hover interactions
+* Fully responsive across devices
 
-FontAwesome: For UI icons.
+---
 
-📂 Project Structure
-Plaintext
+## 🛠 Tech Stack
+
+### Frontend
+
+* HTML5
+* CSS3 (Flexbox, Grid, CSS Variables, Glassmorphism)
+* Vanilla JavaScript (ES6+)
+
+### APIs & Libraries
+
+* **OpenWeatherMap API** → Weather data
+* **Chart.js** → Temperature charts
+* **Leaflet.js** → Interactive maps
+* **Font Awesome** → Icons
+
+---
+
+## 📂 Project Structure
+
+```
 Weather_dashboard/
 │
-├── index.html      # Main layout, search UI, and library CDN links
-├── style.css       # Theming, responsive design, and dark mode variables
-└── script.js       # API fetching, map initialization, and chart rendering
-⚙️ Installation & Setup
-Because this is a purely frontend, vanilla JavaScript application, no complex backend or node modules are required!
+├── index.html      # Layout, UI structure, CDN links
+├── style.css       # Styling, themes, responsiveness
+└── script.js       # API calls, logic, charts, map handling
+```
 
-Clone the Repository:
+---
 
-Bash
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
 git clone <your-repo-url>
 cd Weather_dashboard
-API Key Setup:
+```
 
-The app uses the OpenWeatherMap API.
+### 2. Set Up API Key
 
-Open script.js and locate the API_KEY variable at the top. Ensure it has a valid OpenWeatherMap API key (a default one is included for testing, but you should replace it with your own for production).
+* Open `script.js`
+* Locate:
 
-Run the Application:
+```js
+const API_KEY = "your_api_key_here";
+```
 
-Option 1: Simply double-click index.html to open it in your default web browser.
+* Replace with your own **OpenWeatherMap API key**
 
-Option 2 (Recommended): Open the project folder in VS Code, right-click index.html, and select "Open with Live Server" to prevent any CORS issues when loading local assets or external APIs.
+---
 
-🚀 How to Use
-Allow Location: When prompted by your browser, allow location access to immediately see the weather for your current city.
+### 3. Run the Application
 
-Search: Use the top search bar to type in any city name (e.g., "Tokyo", "London", "New York") and hit the search button or press Enter.
+**Option 1 (Quick Start):**
 
-Analyze: Review the current stats, check the interactive temperature chart, and explore the Leaflet map to see the geographical location of the weather system.
+* Open `index.html` directly in your browser
 
-Toggle Theme: Click the Moon/Sun icon in the top right to switch between Dark Mode and Light Mode.
+**Option 2 (Recommended):**
 
-🔮 Future Improvements
-Save "Recent Searches" to local storage for quick access.
+* Use **VS Code Live Server**
+* Prevents potential CORS issues and improves development experience
 
-Add a toggle to switch between Celsius (°C) and Fahrenheit (°F).
+---
 
-Implement weather alerts or severe weather warnings based on API data.
+## 🚀 How to Use
 
-Made with ❤️ by Kinza Zahra
+1. **Allow Location Access**
+   Get instant weather updates for your current city
+
+2. **Search for a City**
+   Enter any city name (e.g., *Tokyo, London, New York*)
+
+3. **Explore Data**
+
+   * View current weather stats
+   * Analyze the 5-day forecast chart
+   * Check location on the interactive map
+
+4. **Switch Themes**
+
+   * Use the Sun/Moon toggle in the top-right corner
+
+---
+
+## 🔮 Future Improvements
+
+* 🔎 Save **recent searches** for quick access
+* 🌡 Toggle between **Celsius (°C) and Fahrenheit (°F)**
+* ⚠️ Add **weather alerts & severe condition warnings**
+* 📱 Further mobile UX enhancements
+
+---
+
+## ❤️ Acknowledgment
+
+Built with creativity, curiosity, and clean logic by **Kinza Zahra**.
+
+---
+
+> *Turning raw weather data into a beautiful, interactive experience.*
